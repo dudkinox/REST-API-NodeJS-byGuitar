@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "engines": {
-    "node": "12.16.1"
+    "node": "17.7.1"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,6 @@
     "firebase": "^8.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.15"
   }
 }
