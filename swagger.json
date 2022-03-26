@@ -16,14 +16,34 @@
     "/login": {
       "get": {
         "tags": ["login"],
-        "summary": "Add a new pet to the store",
+        "summary": "แสดงข้อมูลผู้ใช้ทั้งหมด",
         "description": "",
         "operationId": "addPet",
         "consumes": ["application/json", "application/xml"],
         "produces": ["application/xml", "application/json"],
         "responses": {
-          "405": {
-            "description": "Invalid input"
+          "200": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": ["write:pets", "read:pets"]
+          }
+        ]
+      }
+    },
+    "/login/:id": {
+      "get": {
+        "tags": ["login"],
+        "summary": "ค้นหาข้อมูลผู้ใช้ตาม id",
+        "description": "",
+        "operationId": "addPet",
+        "consumes": ["application/json", "application/xml"],
+        "produces": ["application/xml", "application/json"],
+        "responses": {
+          "200": {
+            "description": "successful operation"
           }
         },
         "security": [
