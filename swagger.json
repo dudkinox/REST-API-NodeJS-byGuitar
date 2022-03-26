@@ -11,7 +11,7 @@
       }
     }
   ],
-  "schemes": ["https", "http"],
+  "schemes": ["http", "https"],
   "paths": {
     "/login": {
       "get": {
@@ -51,7 +51,7 @@
     }
   },
   "definitions": {
-    "User": {
+    "Account": {
       "type": "object",
       "properties": {
         "id": {
@@ -61,29 +61,18 @@
         "username": {
           "type": "string"
         },
-        "firstName": {
-          "type": "string"
-        },
-        "lastName": {
+        "password": {
           "type": "string"
         },
         "email": {
           "type": "string"
         },
-        "password": {
+        "link": {
           "type": "string"
-        },
-        "phone": {
-          "type": "string"
-        },
-        "userStatus": {
-          "type": "integer",
-          "format": "int32",
-          "description": "User Status"
         }
       },
       "xml": {
-        "name": "User"
+        "name": "Account"
       }
     }
   },
