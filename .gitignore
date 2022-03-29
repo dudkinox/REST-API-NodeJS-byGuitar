@@ -2,4 +2,3 @@ node_modules/
 node_modules/.bin/gp12-pem
 .env
 .env
-.env
